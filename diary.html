@@ -11,8 +11,40 @@
 </head>
 
 <body>
-  <header class="border-b border-[#dce9e1] bg-white">
-    <div class="container flex h-20 items-center justify-between"><a href="index.html" aria-label="Manoमित्रम् home"><img src="Manomitram_logo.png" alt="Manomित्रम् Student Wellness" class="h-14 w-auto max-w-[230px] object-contain"></a><a href="wellness.html" class="btn btn-light">My Wellness</a></div>
+  <header class="sticky top-0 z-20 border-b border-[#dce9e1] bg-[color:var(--color-bg)]/90 backdrop-blur">
+    <div class="container flex h-20 items-center justify-between" >
+      <a href="/" class="flex items-center gap-3 no-underline">
+        <img src="Manomitram_logo.png" alt="Manoमित्रम् Student Wellness"
+          class="h-14 w-auto max-w-[230px] object-contain">
+      </a>
+      <nav class="desktop-nav flex items-center gap-6 text-sm font-semibold" >
+        <a href="index.html">Home</a>
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="desktop-nav flex items-center gap-3">
+        <a href="login.html" class="muted">Login</a>
+        <a href="signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <button data-menu class="rounded-xl p-2 md:hidden" aria-label="Open menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <div data-mobile-nav class="container hidden pb-5 md:hidden">
+      <div class="grid gap-3 rounded-2xl bg-white p-5 shadow-xl">
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a></div>
+    </div>
   </header>
   <main class="container py-14">
     <div class="flex flex-wrap items-end justify-between gap-4">
