@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login — Manoमित्रम्</title>
+  <link rel="icon" type="image/x-icon" href="/Manomitram_logo.png">
+  <link rel="stylesheet" href="/theme.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="sticky top-0 z-20 border-b border-[#dce9e1] bg-[color:var(--color-bg)]/90 backdrop-blur">
+    <div class="container flex h-20 items-center justify-between" >
+      <a href="/" class="flex items-center gap-3 no-underline">
+        <img src="Manomitram_logo.png" alt="Manomित्रम् Student Wellness"
+          class="h-14 w-auto max-w-[230px] object-contain">
+      </a>
+      <nav class="desktop-nav flex items-center gap-6 text-sm font-semibold" >
+        <a href="index.html">Home</a>
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="desktop-nav flex items-center gap-3">
+        <a href="login.html" class="muted">Login</a>
+        <a href="signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <button data-menu class="rounded-xl p-2 md:hidden" aria-label="Open menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <div data-mobile-nav class="container hidden pb-5 md:hidden">
+      <div class="grid gap-3 rounded-2xl bg-white p-5 shadow-xl">
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a></div>
+    </div>
+  </header>
+  <main class="grid min-h-screen items-center bg-[#edf4ee] p-5 md:grid-cols-2">
+    <div class="mx-auto max-w-md"><a href="/" aria-label="Manomित्रम् home"><img src="/Manomitram_logo.png" alt="Manomित्रम् Student Wellness" class="h-16 w-auto max-w-[260px] object-contain"></a>
+      <h1 class="mt-10 text-5xl">Welcome back.</h1>
+      <p class="mt-4 muted">Your private demo wellness space is ready when you are.</p>
+      <form class="card mt-8 space-y-5 p-7" onsubmit="event.preventDefault(); localStorage.setItem('manomitr-session', 'demo'); location.href='/wellness'">
+        <div><label class="text-sm font-bold">Email</label><input class="mt-2" type="email" placeholder="you@example.com" required></div>
+        <div><label class="text-sm font-bold">Password</label><input class="mt-2" type="password" placeholder="••••••••" required></div><label class="flex items-center gap-2 text-sm"><input type="checkbox" class="h-4 w-4" style="width:auto"> Remember me</label><button class="btn btn-primary w-full">Continue to demo</button><a href="#" class="block text-center text-sm font-semibold text-[var(--color-primary)]">Forgot password?</a>
+      </form>
+      <p class="mt-5 text-center text-sm muted">Prototype authentication · no account is created</p><p class="mt-3 text-center text-sm">New here? <a href="signup.html" class="font-semibold text-[var(--color-primary)]">Create a demo account</a></p>
+    </div>
+    <div class="hidden px-10 md:block">
+      <div class="card soft-gradient p-12"><span class="text-6xl">🌿</span>
+        <h2 class="mt-8 text-4xl">Pause.<br>Heal.<br>Grow.</h2>
+        <p class="mt-5 leading-7 muted">A safe, welcoming place to check in, explore self-care and find your next step.</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ManoKit — Manoमित्रम्</title>
+  <link rel="icon" type="image/x-icon" href="/Manomitram_logo.png">
+  <link rel="stylesheet" href="/theme.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-20 border-b border-[#dce9e1] bg-[color:var(--color-bg)]/90 backdrop-blur">
+    <div class="container flex h-20 items-center justify-between" >
+      <a href="/" class="flex items-center gap-3 no-underline">
+        <img src="Manomitram_logo.png" alt="Manomित्रम् Student Wellness"
+          class="h-14 w-auto max-w-[230px] object-contain">
+      </a>
+      <nav class="desktop-nav flex items-center gap-6 text-sm font-semibold" >
+        <a href="index.html">Home</a>
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="desktop-nav flex items-center gap-3">
+        <a href="login.html" class="muted">Login</a>
+        <a href="signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <button data-menu class="rounded-xl p-2 md:hidden" aria-label="Open menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <div data-mobile-nav class="container hidden pb-5 md:hidden">
+      <div class="grid gap-3 rounded-2xl bg-white p-5 shadow-xl">
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a></div>
+    </div>
+  </header>
+  <main class="container py-16"><span class="badge">ManoKit · Self-care library</span>
+    <h1 class="mt-5 text-5xl">Small practices, meaningful pauses.</h1>
+    <p class="mt-4 max-w-2xl text-lg muted">Explore gentle, free wellness content for movement, breath, reflection and rest. Content shown is demo content and should be replaced with licensed resources.</p>
+    <section class="mt-12">
+      <h2 class="text-3xl">Yoga & Movement</h2>
+      <div class="grid-auto mt-5">
+        <article class="card p-6">
+          <div class="grid h-28 place-items-center rounded-2xl bg-[#e8f2e8] text-5xl">🧘</div>
+          <h3 class="mt-5 text-xl">Beginner Yoga</h3>
+          <p class="mt-2 text-sm muted">A calm 10 minute demo practice.</p><button class="btn btn-light mt-5 text-sm">Start practice</button>
+        </article>
+        <article class="card p-6">
+          <div class="grid h-28 place-items-center rounded-2xl bg-[#e8f2e8] text-5xl">🌤️</div>
+          <h3 class="mt-5 text-xl">Morning Movement</h3>
+          <p class="mt-2 text-sm muted">Gentle movement to begin your day.</p><button class="btn btn-light mt-5 text-sm">Start practice</button>
+        </article>
+        <article class="card p-6">
+          <div class="grid h-28 place-items-center rounded-2xl bg-[#e8f2e8] text-5xl">🌿</div>
+          <h3 class="mt-5 text-xl">Stretching</h3>
+          <p class="mt-2 text-sm muted">Release tension at your own pace.</p><button class="btn btn-light mt-5 text-sm">Start practice</button>
+        </article>
+        <article class="card p-6">
+          <div class="grid h-28 place-items-center rounded-2xl bg-[#e8f2e8] text-5xl">🌙</div>
+          <h3 class="mt-5 text-xl">Relaxation Yoga</h3>
+          <p class="mt-2 text-sm muted">A restorative evening sequence.</p><button class="btn btn-light mt-5 text-sm">Start practice</button>
+        </article>
+      </div>
+    </section>
+    <section class="mt-14">
+      <h2 class="text-3xl">Meditation & Breathing</h2>
+      <div class="grid-auto mt-5">
+        <article class="card p-6"><i data-lucide="wind" class="h-8 w-8 text-[var(--color-primary)]"></i>
+          <h3 class="mt-5 text-xl">5-minute breathing</h3>
+          <p class="mt-2 text-sm muted">Guided audio placeholder · 5 min</p><button class="btn btn-primary mt-5 text-sm">Play demo</button>
+        </article>
+        <article class="card p-6"><i data-lucide="sparkles" class="h-8 w-8 text-[var(--color-primary)]"></i>
+          <h3 class="mt-5 text-xl">Mindfulness</h3>
+          <p class="mt-2 text-sm muted">Notice the present moment · 8 min</p><button class="btn btn-primary mt-5 text-sm">Play demo</button>
+        </article>
+        <article class="card p-6"><i data-lucide="focus" class="h-8 w-8 text-[var(--color-primary)]"></i>
+          <h3 class="mt-5 text-xl">Focus reset</h3>
+          <p class="mt-2 text-sm muted">A quiet pause between tasks · 11 min</p><button class="btn btn-primary mt-5 text-sm">Play demo</button>
+        </article>
+      </div>
+    </section>
+    <section class="mt-14">
+      <h2 class="text-3xl">Wisdom & Motivation</h2>
+      <div class="grid-auto mt-5">
+        <article class="card p-6"><span class="text-3xl">📖</span>
+          <h3 class="mt-4 text-xl">Motivational talks</h3>
+          <p class="mt-2 text-sm muted">Curated, legally available content collection.</p><a class="mt-5 inline-block font-bold text-[var(--color-primary)]" href="/learn-connect">Browse resources →</a>
+        </article>
+        <article class="card p-6"><span class="text-3xl">🪷</span>
+          <h3 class="mt-4 text-xl">Bhagavad Gita · chapter-wise</h3>
+          <p class="mt-2 text-sm muted">For reflection, with licensed content only.</p><a class="mt-5 inline-block font-bold text-[var(--color-primary)]" href="/learn-connect">Browse resources →</a>
+        </article>
+        <article class="card p-6"><span class="text-3xl">🎧</span>
+          <h3 class="mt-4 text-xl">Audiobooks</h3>
+          <p class="mt-2 text-sm muted">A future shelf of openly licensed listening.</p><a class="mt-5 inline-block font-bold text-[var(--color-primary)]" href="/learn-connect">Browse resources →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script>
+    lucide.createIcons()
+
+  </script>
+</body>
+
+</html>

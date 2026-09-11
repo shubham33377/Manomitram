@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create account — Manoमित्रम्</title>
+  <link rel="icon" type="image/x-icon" href="/Manomitram_logo.png">
+  <link rel="stylesheet" href="/theme.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="sticky top-0 z-20 border-b border-[#dce9e1] bg-[color:var(--color-bg)]/90 backdrop-blur">
+    <div class="container flex h-20 items-center justify-between" >
+      <a href="/" class="flex items-center gap-3 no-underline">
+        <img src="Manomitram_logo.png" alt="Manomित्रम् Student Wellness"
+          class="h-14 w-auto max-w-[230px] object-contain">
+      </a>
+      <nav class="desktop-nav flex items-center gap-6 text-sm font-semibold" >
+        <a href="index.html">Home</a>
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="desktop-nav flex items-center gap-3">
+        <a href="login.html" class="muted">Login</a>
+        <a href="signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <button data-menu class="rounded-xl p-2 md:hidden" aria-label="Open menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <div data-mobile-nav class="container hidden pb-5 md:hidden">
+      <div class="grid gap-3 rounded-2xl bg-white p-5 shadow-xl">
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a></div>
+    </div>
+  </header>
+  <main class="grid min-h-screen items-center bg-[#edf4ee] p-5 md:grid-cols-2">
+    <div class="mx-auto w-full max-w-md">
+      <a href="/" aria-label="Manomित्रम् home"><img src="/Manomitram_logo.png" alt="Manomित्रम् Student Wellness" class="h-16 w-auto max-w-[260px] object-contain"></a>
+      <h1 class="mt-10 text-5xl">Begin gently.</h1>
+      <p class="mt-4 muted">Create your private demo wellness space. No real account is created in this prototype.</p>
+      <form id="signup-form" class="card mt-8 space-y-5 p-7">
+        <div><label class="text-sm font-bold">Name</label><input name="name" class="mt-2" required placeholder="Your name"></div>
+        <div><label class="text-sm font-bold">Email</label><input name="email" class="mt-2" type="email" required placeholder="you@example.com"></div>
+        <div><label class="text-sm font-bold">Password</label><input name="password" class="mt-2" type="password" minlength="6" required placeholder="At least 6 characters"></div>
+        <div><label class="text-sm font-bold">Wellness preference <span class="font-normal muted">(optional)</span></label><select name="preferences" class="mt-2">
+            <option value="">Choose one</option>
+            <option>Mindfulness</option>
+            <option>Movement</option>
+            <option>Better routines</option>
+            <option>Learning and support</option>
+          </select></div>
+        <button class="btn btn-primary w-full">Create demo account</button>
+        <p class="text-center text-sm muted">Already have a demo account? <a href="login.html" class="font-semibold text-[var(--color-primary)]">Log in</a></p>
+      </form>
+    </div>
+    <div class="hidden px-10 md:block">
+      <div class="card soft-gradient p-12"><span class="text-6xl">🌿</span>
+        <h2 class="mt-8 text-4xl">A little space<br>for yourself.</h2>
+        <p class="mt-5 leading-7 muted">Check in, explore supportive practices, and choose your next step at your own pace.</p>
+      </div>
+    </div>
+  </main>
+  <script src="/app.js"></script>
+</body>
+
+</html>

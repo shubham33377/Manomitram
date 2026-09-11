@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Connections — Manoमित्रम्</title>
+  <link rel="icon" type="image/x-icon" href="/Manomitram_logo.png">
+  <link rel="stylesheet" href="theme.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="sticky top-0 z-20 border-b border-[#dce9e1] bg-[color:var(--color-bg)]/90 backdrop-blur">
+    <div class="container flex h-20 items-center justify-between" >
+      <a href="/" class="flex items-center gap-3 no-underline">
+        <img src="Manomitram_logo.png" alt="Manomित्रम् Student Wellness"
+          class="h-14 w-auto max-w-[230px] object-contain">
+      </a>
+      <nav class="desktop-nav flex items-center gap-6 text-sm font-semibold" >
+        <a href="index.html">Home</a>
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="desktop-nav flex items-center gap-3">
+        <a href="login.html" class="muted">Login</a>
+        <a href="signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <button data-menu class="rounded-xl p-2 md:hidden" aria-label="Open menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <div data-mobile-nav class="container hidden pb-5 md:hidden">
+      <div class="grid gap-3 rounded-2xl bg-white p-5 shadow-xl">
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a></div>
+    </div>
+  </header>
+  <main class="container py-14"><span class="badge">My Connections · Demo</span>
+    <h1 class="mt-5 text-5xl">People who help you feel supported.</h1>
+    <p class="mt-4 max-w-2xl muted">Build a trusted-support network of family, friends, relatives and contacts. Sharing is always your choice.</p>
+    <form id="connection-form" class="card mt-8 flex flex-wrap gap-3 p-5"><input name="name" class="max-w-xs" required placeholder="Contact name"><input name="relationship" class="max-w-xs" required placeholder="Relationship"><button class="btn btn-primary">+ Add trusted contact</button></form>
+    <div id="connections-list" class="grid-auto mt-8"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>

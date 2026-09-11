@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learn & Connect — Manoमित्रम्</title>
+  <link rel="icon" type="image/x-icon" href="/Manomitram_logo.png">
+  <link rel="stylesheet" href="/theme.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="sticky top-0 z-20 border-b border-[#dce9e1] bg-[color:var(--color-bg)]/90 backdrop-blur">
+    <div class="container flex h-20 items-center justify-between" >
+      <a href="/" class="flex items-center gap-3 no-underline">
+        <img src="Manomitram_logo.png" alt="Manomित्रम् Student Wellness"
+          class="h-14 w-auto max-w-[230px] object-contain">
+      </a>
+      <nav class="desktop-nav flex items-center gap-6 text-sm font-semibold" >
+        <a href="index.html">Home</a>
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="desktop-nav flex items-center gap-3">
+        <a href="login.html" class="muted">Login</a>
+        <a href="signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <button data-menu class="rounded-xl p-2 md:hidden" aria-label="Open menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <div data-mobile-nav class="container hidden pb-5 md:hidden">
+      <div class="grid gap-3 rounded-2xl bg-white p-5 shadow-xl">
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a></div>
+    </div>
+  </header>
+  <main class="container py-16"><span class="badge">Learn & Connect · Resource library</span>
+    <h1 class="mt-5 text-5xl">Knowledge can make the next step feel lighter.</h1>
+    <p class="mt-4 max-w-2xl text-lg muted">Explore accessible educational resources and community programs. Content should be reviewed and licensed before production use.</p>
+    <div class="mt-10 flex flex-wrap gap-2"><button class="btn btn-light text-sm">Stress</button><button class="btn btn-light text-sm">Sleep</button><button class="btn btn-light text-sm">Mindfulness</button><button class="btn btn-light text-sm">Student life</button><button class="btn btn-light text-sm">Healthy habits</button><button class="btn btn-light text-sm">When to seek help</button></div>
+    <div class="grid-auto mt-8">
+      <article class="card overflow-hidden">
+        <div class="grid h-36 place-items-center bg-[#e9f3e9] text-5xl">🌾</div>
+        <div class="p-6"><span class="badge">Stress</span>
+          <h2 class="mt-4 text-xl">Understanding stress</h2>
+          <p class="mt-2 text-sm muted">A short educational demo resource for awareness and reflection.</p><button data-read-more class="mt-5 font-bold text-[var(--color-primary)]">Read more →</button>
+        </div>
+      </article>
+      <article class="card overflow-hidden">
+        <div class="grid h-36 place-items-center bg-[#e9f3e9] text-5xl">🌙</div>
+        <div class="p-6"><span class="badge">Sleep</span>
+          <h2 class="mt-4 text-xl">A kinder bedtime routine</h2>
+          <p class="mt-2 text-sm muted">Simple ideas for creating a calmer evening rhythm.</p><button data-read-more class="mt-5 font-bold text-[var(--color-primary)]">Read more →</button>
+        </div>
+      </article>
+      <article class="card overflow-hidden">
+        <div class="grid h-36 place-items-center bg-[#e9f3e9] text-5xl">🍃</div>
+        <div class="p-6"><span class="badge">Mindfulness</span>
+          <h2 class="mt-4 text-xl">Mindfulness for busy days</h2>
+          <p class="mt-2 text-sm muted">Small grounding practices that fit into everyday moments.</p><button data-read-more class="mt-5 font-bold text-[var(--color-primary)]">Read more →</button>
+        </div>
+      </article>
+      <article class="card overflow-hidden">
+        <div class="grid h-36 place-items-center bg-[#e9f3e9] text-5xl">🤝</div>
+        <div class="p-6"><span class="badge">Support</span>
+          <h2 class="mt-4 text-xl">Finding support early</h2>
+          <p class="mt-2 text-sm muted">Learn how to choose a suitable next step when support is needed.</p><button data-read-more class="mt-5 font-bold text-[var(--color-primary)]">Read more →</button>
+        </div>
+      </article>
+    </div>
+    <div class="mt-14 rounded-[var(--radius)] bg-[var(--color-primary)] p-8 text-white">
+      <h2 class="text-3xl">Awareness Programs</h2>
+      <p class="mt-3 max-w-2xl text-white/70">A future library for college programs, NGO initiatives, awareness campaigns and community events — clearly sourced and verified before publishing.</p>
+    </div>
+  </main>
+  <script>
+    document.querySelectorAll('[data-read-more]').forEach(button => button.addEventListener('click', () => {
+      button.textContent = 'Demo resource selected ✓';
+    }));
+
+  </script>
+</body>
+
+</html>

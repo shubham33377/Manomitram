@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Wellness — Manoमित्रम्</title>
+  <link rel="icon" type="image/x-icon" href="/Manomitram_logo.png">
+  <link rel="stylesheet" href="/theme.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body>
+      <header class="sticky top-0 z-20 border-b border-[#dce9e1] bg-[color:var(--color-bg)]/90 backdrop-blur">
+        <div class="container flex h-20 items-center justify-between">
+          <a href="/" class="flex items-center gap-3 no-underline">
+            <img src="Manomitram_logo.png" alt="Manomित्रम् Student Wellness"
+              class="h-14 w-auto max-w-[230px] object-contain">
+          </a>
+          <nav class="desktop-nav flex items-center gap-6 text-sm font-semibold">
+            <a href="index.html">Home</a>
+            <a href="wellness.html">My Wellness</a>
+            <a href="manokit.html">ManoKit</a>
+            <a href="manocare.html">ManoCare</a>
+            <a href="manobot.html">ManoBot</a>
+            <a href="freecare.html">FreeCare</a>
+            <a href="learn-connect.html">Learn & Connect</a>
+            <a href="about.html">About</a>
+          </nav>
+          <div class="desktop-nav flex items-center gap-3">
+            <a href="login.html" class="muted">Login</a>
+            <a href="signup.html" class="btn btn-primary">Get Started</a>
+          </div>
+          <button data-menu class="rounded-xl p-2 md:hidden" aria-label="Open menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+        <div data-mobile-nav class="container hidden pb-5 md:hidden">
+          <div class="grid gap-3 rounded-2xl bg-white p-5 shadow-xl">
+            <a href="wellness.html">My Wellness</a>
+            <a href="manokit.html">ManoKit</a>
+            <a href="manocare.html">ManoCare</a>
+            <a href="manobot.html">ManoBot</a>
+            <a href="freecare.html">FreeCare</a>
+            <a href="learn-connect.html">Learn & Connect</a>
+            <a href="about.html">About</a>
+          </div>
+        </div>
+      </header>
+
+  <main class="container py-12">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div><span class="badge">My Wellness · Demo workspace</span>
+        <h1 class="mt-4 text-5xl">Good morning 👋</h1>
+        <p class="mt-2 text-lg muted">How are you feeling today?</p>
+      </div>
+      <a href="manobot.html" class="btn btn-primary">
+        <i data-lucide="message-circle" class="h-4 w-4"></i> 
+        Talk to ManoBot
+      </a>
+    </div>
+    <form id="checkin-form" class="card mt-10 p-6 md:p-8"><input type="hidden" name="mood" value="">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl">Today's Check-in</h2><span id="checkin-result" class="text-sm font-semibold text-[var(--color-primary)]"></span>
+      </div>
+      <div class="mt-7 grid gap-7 md:grid-cols-3">
+        <div><label class="font-bold">Mood</label>
+          <div class="mt-3 flex flex-wrap gap-2"><button type="button" data-mood="Great" class="rounded-xl border p-3 text-2xl">😄<small class="block text-xs">Great</small></button><button type="button" data-mood="Good" class="rounded-xl border p-3 text-2xl">🙂<small class="block text-xs">Good</small></button><button type="button" data-mood="Okay" class="rounded-xl border p-3 text-2xl">😐<small class="block text-xs">Okay</small></button><button type="button" data-mood="Low" class="rounded-xl border p-3 text-2xl">😟<small class="block text-xs">Low</small></button></div>
+        </div>
+        <div><label class="font-bold" for="stress">Stress</label><select id="stress" name="stress" class="mt-3">
+            <option>Low</option>
+            <option>Moderate</option>
+            <option>High</option>
+          </select></div>
+        <div><label class="font-bold" for="energy">Energy</label><select id="energy" name="energy" class="mt-3">
+            <option>Medium</option>
+            <option>Low</option>
+            <option>High</option>
+          </select></div>
+      </div><button class="btn btn-primary mt-8" type="submit">Save Check-in</button>
+    </form>
+    <div class="mt-12 flex items-center justify-between">
+      <div>
+        <h2 class="text-3xl">Wellness Overview</h2>
+        <p class="muted">A gentle view of your demo patterns — not a diagnosis.</p>
+      </div><span class="badge">Sample data</span>
+    </div>
+    <div class="grid-auto mt-6">
+      <div class="card p-5">
+        <p class="muted">Mood</p><strong class="text-2xl">Good</strong>
+        <p class="mt-3 text-sm text-[#5f987b]">↗ steady this week</p>
+      </div>
+      <div class="card p-5">
+        <p class="muted">Stress</p><strong class="text-2xl">Low</strong>
+        <p class="mt-3 text-sm text-[#5f987b]">↓ 12% from Monday</p>
+      </div>
+      <div class="card p-5">
+        <p class="muted">Energy</p><strong class="text-2xl">Medium</strong>
+        <p class="mt-3 text-sm text-[#5f987b]">→ finding balance</p>
+      </div>
+      <div class="card p-5">
+        <p class="muted">Meditation</p><strong class="text-2xl">12 min</strong>
+        <p class="mt-3 text-sm text-[#5f987b]">today’s activity</p>
+      </div>
+    </div>
+    <div class="card mt-6 p-6">
+      <div class="flex justify-between">
+        <h2 class="text-2xl">Weekly wellness rhythm</h2><span class="badge">Progress indicator</span>
+      </div>
+      <div id="chart" class="mt-4"></div>
+    </div>
+    <div class="mt-8 grid gap-3 sm:grid-cols-3"><a href="tracker.html" class="btn btn-light">Open Wellness Tracker →</a><a href="diary.html" class="btn btn-light">Write in My Diary →</a><a href="connections.html" class="btn btn-light">Manage Connections →</a></div><div class="mt-8 grid-auto">
+      <div class="card p-6"><span class="text-3xl">🔥</span>
+        <h3 class="mt-3 text-xl">7 Day Wellness Streak</h3>
+        <div class="mt-4 h-2 rounded-full bg-[#e7eee8]">
+          <div class="h-2 w-[70%] rounded-full bg-[var(--color-primary)]"></div>
+        </div>
+      </div>
+      <div class="card p-6"><span class="text-3xl">🧘</span>
+        <h3 class="mt-3 text-xl">12 Meditation Sessions</h3>
+        <p class="mt-2 muted">Keep making space for yourself.</p>
+      </div>
+      <div class="card p-6"><span class="text-3xl">🌿</span>
+        <h3 class="mt-3 text-xl">8 Yoga Sessions</h3>
+        <p class="mt-2 muted">Demo values, replaceable with real data.</p>
+      </div>
+    </div>
+  </main>
+  <script>
+    new ApexCharts(document.querySelector('#chart'), {
+      chart: {
+        type: 'area',
+        height: 260,
+        toolbar: {
+          show: false
+        }
+      },
+      series: [{
+        name: 'Mood',
+        data: [62, 68, 58, 72, 70, 76, 72]
+      }, {
+        name: 'Energy',
+        data: [48, 55, 52, 61, 57, 64, 66]
+      }],
+      xaxis: {
+        categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+      },
+      colors: ['#236b5d', '#d79b42'],
+      stroke: {
+        curve: 'smooth',
+        width: 3
+      },
+      fill: {
+        opacity: .12
+      },
+      yaxis: {
+        min: 0,
+        max: 100
+      },
+      grid: {
+        borderColor: '#e3ece5'
+      }
+    }).render();
+    lucide.createIcons();
+
+  </script>
+  <script src="/app.js"></script>
+</body>
+
+</html>

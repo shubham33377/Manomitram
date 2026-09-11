@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Diary — Manoमित्रम्</title>
+  <link rel="icon" type="image/x-icon" href="/Manomitram_logo.png">
+  <link rel="stylesheet" href="/theme.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="border-b border-[#dce9e1] bg-white">
+    <div class="container flex h-20 items-center justify-between"><a href="index.html" aria-label="Manoमित्रम् home"><img src="Manomitram_logo.png" alt="Manomित्रम् Student Wellness" class="h-14 w-auto max-w-[230px] object-contain"></a><a href="wellness.html" class="btn btn-light">My Wellness</a></div>
+  </header>
+  <main class="container py-14">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div><span class="badge">Private space · Demo</span>
+        <h1 class="mt-5 text-5xl">My Diary 📔</h1>
+        <p class="mt-3 muted">Your diary is personal. Keep your thoughts private and secure.</p>
+      </div>
+    </div>
+    <div class="mt-10 grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
+      <section class="card p-7">
+        <h2 class="text-2xl">How was my day?</h2>
+        <form id="diary-form"><input id="diary-index" type="hidden" name="index" value=""><input id="diary-title" name="title" class="mt-5" placeholder="Entry title"><textarea id="diary-body" name="body" class="mt-4 min-h-52" required placeholder="Write freely, or skip prompts and begin anywhere..."></textarea>
+          <div class="mt-4 flex flex-wrap gap-2"><button type="button" class="btn btn-light text-sm" onclick="document.querySelector('#diary-body').value += ' What went well today? '">What went well?</button><button type="button" class="btn btn-light text-sm" onclick="document.querySelector('#diary-body').value += ' What am I grateful for? '">What am I grateful for?</button><button type="button" class="btn btn-light text-sm" onclick="document.querySelector('#diary-body').value += ' What would I improve tomorrow? '">Improve tomorrow?</button></div><button class="btn btn-primary mt-6">Save private entry</button>
+        </form>
+      </section>
+      <section><input data-search placeholder="Search entries">
+        <div id="diary-list" class="mt-4 grid gap-4"></div>
+      </section>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>

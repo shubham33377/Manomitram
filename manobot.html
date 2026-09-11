@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ManoBot — Manoमित्रम्</title>
+  <link rel="icon" type="image/x-icon" href="/Manomitram_logo.png">
+  <link rel="stylesheet" href="/theme.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-20 border-b border-[#dce9e1] bg-[color:var(--color-bg)]/90 backdrop-blur">
+    <div class="container flex h-20 items-center justify-between" >
+      <a href="/" class="flex items-center gap-3 no-underline">
+        <img src="Manomitram_logo.png" alt="Manomित्रम् Student Wellness"
+          class="h-14 w-auto max-w-[230px] object-contain">
+      </a>
+      <nav class="desktop-nav flex items-center gap-6 text-sm font-semibold" >
+        <a href="index.html">Home</a>
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="desktop-nav flex items-center gap-3">
+        <a href="login.html" class="muted">Login</a>
+        <a href="signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <button data-menu class="rounded-xl p-2 md:hidden" aria-label="Open menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <div data-mobile-nav class="container hidden pb-5 md:hidden">
+      <div class="grid gap-3 rounded-2xl bg-white p-5 shadow-xl">
+        <a href="wellness.html">My Wellness</a>
+        <a href="manokit.html">ManoKit</a>
+        <a href="manocare.html">ManoCare</a>
+        <a href="manobot.html">ManoBot</a>
+        <a href="freecare.html">FreeCare</a>
+        <a href="learn-connect.html">Learn & Connect</a>
+        <a href="about.html">About</a></div>
+    </div>
+  </header>
+  <main class="container grid gap-8 py-12 lg:grid-cols-[1fr_340px]">
+    <section class="card overflow-hidden">
+      <div class="bg-[var(--color-primary)] p-7 text-white">
+        <div class="flex items-center gap-4"><span class="grid h-14 w-14 place-items-center rounded-2xl bg-white/15 text-3xl">🤖</span>
+          <div>
+            <h1 class="text-3xl">Hello, I’m ManoBot</h1>
+            <p class="text-white/70">A gentle wellness guide · Demo</p>
+          </div>
+        </div>
+      </div>
+      <div id="messages" class="flex h-[420px] flex-col gap-4 overflow-y-auto p-6">
+        <div class="max-w-[80%] rounded-2xl rounded-bl-sm bg-[#edf6ef] px-4 py-3 text-sm">Hi there. I can share general wellness ideas, breathing exercises and help you find your way around Manoमित्रम्. What’s on your mind?</div>
+      </div>
+      <form id="chat-form" class="flex gap-2 border-t p-4"><input id="chat-input" placeholder="Type how you’re feeling…"><button class="btn btn-primary" aria-label="Send"><i data-lucide="send" class="h-4 w-4"></i></button></form>
+    </section>
+    <aside>
+      <!-- <div class="card p-6">
+        <h2 class="text-xl">Try asking</h2>
+        <div class="mt-4 grid gap-2"><button data-chat-prompt="I'm feeling stressed today." class="rounded-xl bg-[#edf6ef] p-3 text-left text-sm">I'm feeling stressed today.</button><button data-chat-prompt="Suggest a breathing exercise." class="rounded-xl bg-[#edf6ef] p-3 text-left text-sm">Suggest a breathing exercise.</button><button data-chat-prompt="Help me build a healthy routine." class="rounded-xl bg-[#edf6ef] p-3 text-left text-sm">Help me build a healthy routine.</button><button data-chat-prompt="Find professional support." class="rounded-xl bg-[#edf6ef] p-3 text-left text-sm">Find professional support.</button></div>
+      </div> -->
+      <div class="mt-5 rounded-[var(--radius)] border border-[#e7c9a5] bg-[#fff8eb] p-6">
+        <h2 class="font-bold">A note on safety</h2>
+        <p class="mt-3 text-sm leading-6 muted">ManoBot does not diagnose conditions or replace qualified professionals. It offers general wellness information. If you may be in immediate danger, contact local emergency services or a trusted person now.</p><a href="manocare.html" class="mt-4 inline-block font-bold text-[var(--color-primary)]">Get Professional Help →</a>
+      </div>
+    </aside>
+  </main>
+  <script>
+    lucide.createIcons()
+
+  </script>
+  <script src="/app.js"></script>
+</body>
+
+</html>
+
